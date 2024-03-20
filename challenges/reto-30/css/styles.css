@@ -11,4 +11,33 @@ Colors:
 }
 
 .piano {
+  position:relative ;
+width: 180px;
+height: 100px;
+background-color:#191919 ;  
+left: 110px;
+top: 100px;
+border-radius: 10px;
+
+}
+.piano::before{
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 70px;
+  background-color: #fff ;
+  top: 25px;
+  left: 5px;
+  border-radius: 5px;
+  box-shadow: 25px 0px #fff, 50px 0px #fff, 75px 0px #fff, 100px 0px #fff, 125px 0px #fff, 150px 0px #fff ;
+}
+.piano::after{
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 50px;
+  background-color: #191919;
+  left: 20px;
+  top: 10px;
+  box-shadow: 25px 0px #191919, 75px 0px #191919, 100px 0px #191919, 125px 0px #191919 ;
 }

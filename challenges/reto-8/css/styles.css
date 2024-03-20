@@ -15,7 +15,20 @@ Colors:
   width: 120px;
   height: 120px;
   background-color: #f3ac3c;
-  border-radius: 50% 0 50% 50%;
-  top: 150px;
-  left: 80px;
+  border-radius:100%;
+  top: 30px;
+  left: 200px;
+}
+.leaf::after{
+  position: absolute;
+  content: '';
+  width: 120px;
+  height: 120px;
+  background-color: #f3ac3c;
+  border-radius: 100px 0px 100px 100px;
+  top: 120px;
+  left: -120px;
+  box-shadow: 60px -60px #998235;
+  
+
 }

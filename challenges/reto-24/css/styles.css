@@ -10,5 +10,29 @@ Colors:
   background-color: #f3ac3c;
 }
 
-.rectangle {
-}
+.switch {
+  position: relative;
+   width: 200px;
+   height: 200px;
+   background-color: #1A4341;
+   top: 50px;
+   left: 100px;
+  }
+  .switch::before{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color:#998235 ;
+    top: 100px;
+  }
+  .switch::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color:#F3AC3C ;
+    top: 150px;
+    left: 50px;
+  }
+

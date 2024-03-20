@@ -10,4 +10,30 @@ Colors:
 }
 
 .letter {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #6592CF;
+  border-radius: 100px;
+  top: 100px;
+  left: 150px;
+  box-shadow: 0px 0px 0px 50px #243D83 ;
+}
+
+.letter::after{
+  position: absolute;
+  content: '';
+  width:50px ;
+  height: 150px;
+  background-color: #6592CF;
+  top: -100px;
+}
+.letter::before{
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 100px;
+  background-color: #243D83;
+  left: -50px;
+  top: -50px;
 }

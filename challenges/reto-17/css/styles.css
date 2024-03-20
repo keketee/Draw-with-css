@@ -11,4 +11,31 @@ Colors:
 }
 
 .shape {
+  position: relative;
+  width: 400px;
+  height: 150px;
+  background-color:#4CAAB3 ;
+  top: 75px;
+
+}
+.shape::before{
+  position: absolute;
+  content: '';
+  width: 150px;
+  height: 150px;
+  background-color: #4CAAB3;
+  rotate: 45deg;
+  left: 126px;
+  box-shadow: 0px 0px 0px 51px #222730;
+}
+
+.shape::after{
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: #393E46;
+  top: 50px;
+  left: 175px;
+  border-radius: 100%;
 }

@@ -12,4 +12,33 @@ Colors:
 }
 
 .circle {
+position: relative;
+width: 100px;
+height: 100px;
+background-color:#E08027 ;
+border-radius: 100%;
+left: 150px;
+top: 100px;
+box-shadow: 0px 0px 0px 30px #824B20 ;
+
+}
+.circle::before{
+  position: absolute;
+  content: '';
+  width: 120px;
+  height: 60px;  
+  background-color: #FFF58F ;
+  left: -10px;
+  top: 39px;
+  border-radius:0px 0px 100px 100px  ;
+}
+.circle::after{
+  position: absolute;
+  content: '';
+  width: 80px;
+  height: 80px;  
+  background-color: #E08027 ;
+  border-radius: 100%;
+  left: 10px;
+  top:5px
 }
