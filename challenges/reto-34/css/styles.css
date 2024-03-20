@@ -10,7 +10,57 @@ Colors:
 }
 
 .shape-1 {
+  position: relative;
+  width: 10px;
+  height: 180px;
+  background-color: #F3AC3C;
+  top: 50px;
+  left: 195px;
+  border-radius: 50px;
+}
+.shape-1::before{
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 180px;
+  background-color: #F3AC3C;
+  rotate: 60deg;
+  top: 5px;
+  left: 10px;
+  border-radius: 50px;
+
+
+}
+.shape-1::after{
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 180px;
+  background-color: #F3AC3C;
+  rotate: 120deg;
+  top: 15px;
+  left: 10px;
+  border-radius: 50px;
 }
 
 .shape-2 {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color:#F3AC3C ;
+  left: 150px;
+  bottom: 80px;
+  border-radius: 100%;
+
+}
+.shape-2::before{
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: #998235;
+  top: 65px;
+  left: 40px;
+  border-radius: 100%;
+  box-shadow: -15px -40px 0px 5px #998235, 25px -50px 0px -5px #998235  ;
 }

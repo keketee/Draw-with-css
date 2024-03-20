@@ -11,7 +11,61 @@ Colors:
 }
 
 .shape-1 {
+  position: relative;
+  width: 150px;
+  height: 75px;
+  background-color:yellow ;
+  top: 150px;
+  left: 125px;
+  border-radius: 35px;
+
+
+}
+.shape-1::before{
+  position: absolute;
+  content: '';
+  width: 25px;
+  height: 75px;
+  background-color:#000000 ;
+  left: 35px;
+  box-shadow: 35px 0px rgb(0, 0, 0);
+}
+.shape-1::after{
+
+  position: absolute;
+  content: '';
+  width:25px ;
+  height:75px ;
+  background-color: #000000;
+  border-radius: 100px 0px 0px 100px;
+  
 }
 
 .shape-2 {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  background-color:#FFF ;
+  border-radius: 100%;
+  left:125px;
+  box-shadow: 75px 0px #FFF;
+}
+.shape-2::before{
+  position: absolute;
+  content: '';
+  width: 70px;
+  height: 35px;   
+  background-color: rgb(255, 255, 255);
+  top: 40px;
+  left: 40px;
+}
+.shape-2::after{
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: rgb(0, 0, 0);
+  top: 95px;
+  left: 115px;
+  border-radius: 100%;
 }
