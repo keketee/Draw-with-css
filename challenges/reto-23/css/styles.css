@@ -11,26 +11,33 @@ Colors:
   background-color: #62306d;
 }
 
-.rectangle{
+.rectangle {
   position: relative;
   width: 100px;
   height: 100px;
-  background-color: #F7EC7D;
-  top: 100px;
+  background-color: #aa445f;
+  top: 50px;
   left: 80px;
-  border-radius: 100%;
-  box-shadow: 0px -50px  #AA445F ;
-
+  border-radius: 50% 50% 0 0;
 }
-.rectangle::after{
+
+.rectangle::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 100px;
   height: 100px;
-  border-radius: 100px;
-
-  left: 140px;
-  background-color: #F7EC7D;
-  box-shadow: 0px 50px #E38F66;
+  background-color: #f7ec7d;
+  top: 50px;
+  border-radius: 100%;
+  box-shadow: 140px 0px #f7ec7d;
 }
-
+.rectangle::before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: #e38f66;
+  border-radius: 0 0 50% 50%;
+  left: 140px;
+  top: 100px;
+}

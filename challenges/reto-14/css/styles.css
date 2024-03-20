@@ -12,33 +12,38 @@ Colors:
 }
 
 .circle {
-position: relative;
-width: 100px;
-height: 100px;
-background-color:#E08027 ;
-border-radius: 100%;
-left: 150px;
-top: 100px;
-box-shadow: 0px 0px 0px 30px #824B20 ;
-
-}
-.circle::before{
-  position: absolute;
-  content: '';
-  width: 120px;
-  height: 60px;  
-  background-color: #FFF58F ;
-  left: -10px;
-  top: 39px;
-  border-radius:0px 0px 100px 100px  ;
-}
-.circle::after{
-  position: absolute;
-  content: '';
-  width: 80px;
-  height: 80px;  
-  background-color: #E08027 ;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #e08027;
   border-radius: 100%;
-  left: 10px;
-  top:5px
+  left: 150px;
+  top: 100px;
+  box-shadow: 0 0 0 30px #824b20;
+}
+
+.circle::after {
+  position: absolute;
+  content: "";
+  height: 120px;
+  width: 120px;
+  background-color: transparent;
+  left: -9px;
+  top: -7px;
+  border-radius: 50%;
+  border: 20px solid #fff58f;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  rotate: 45deg;
+}
+.circle::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #fff58f;
+  border-radius: 100%;
+  top: 40px;
+  left: -9px;
+  box-shadow: 100px 0px #fff58f;
 }
